@@ -464,3 +464,21 @@ textarea:focus {
     max-width: 100%;
   }
 }
+.map-container {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.whatsapp-btn{
+  background:#25D366;
+  color:white;
+  padding:6px 12px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.whatsapp-btn:hover{
+  background:#1ebe5d;
+}
