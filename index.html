@@ -1,517 +1,477 @@
+<!-- 
+========================================================
+ELTON'S PHARMACY WEBSITE
+Description: Community pharmacy website for Elton's Pharmacy
+Features:
+- Navigation menu
+- Hero section
+- About section
+- Products section
+- Contact form
+- Embedded Google map
+- Social media icons
+- WhatsApp floating button
+========================================================
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Character encoding for the webpage -->
+    <meta charset="UTF-8">
 
-<meta name="description" content="Elton's Pharmacy - Your trusted community pharmacy for medicines, supplements, toiletries and free delivery within Nairobi.">
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="author" content="Elton's Pharmacy">
+    <!-- SEO description for search engines -->
+    <meta name="description" content="Elton's Pharmacy - Your trusted community pharmacy for medicines, supplements, toiletries and free delivery within Nairobi.">
 
-<meta name="keywords" content="pharmacy Nairobi, medicines Nairobi, supplements Nairobi, Westlands pharmacy">
+    <!-- Author of the webpage -->
+    <meta name="author" content="Elton's Pharmacy">
 
-<meta name="robots" content="index, follow">
+    <!-- Title displayed on the browser tab -->
+    <title>Elton's Pharmacy | Community Pharmacy</title>
 
-<title>Elton's Pharmacy | Community Pharmacy</title>
+    <!-- Font Awesome library for icons (Facebook, Instagram, WhatsApp, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<link rel="icon" type="image/png" href="favicon.png">
+    <!-- Google fonts connection optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="styles.css">
-
-<!-- Open Graph for sharing -->
-<meta property="og:title" content="Elton's Pharmacy">
-<meta property="og:description" content="Trusted community pharmacy in Nairobi offering medicines, supplements and free delivery.">
-<meta property="og:image" content="logo-transparent.png">
-<meta property="og:type" content="website">
-
+    <!-- Import Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 
 <body>
 
-<!-- TOP BAR -->
 
-<div class="topbar">
-<div class="container topbar-inner">
+<!-- =====================================================
+TOPBAR + HEADER SECTION
+Contains the announcement bar and the main navigation
+===================================================== -->
 
-<span class="topbar-text">
-Open daily • Trusted care • Free delivery within Nairobi
-</span>
+<div class="fixed-top-wrapper">
 
-<div class="socials">
+    <!-- Topbar displaying announcement and social media icons -->
+    <div class="topbar">
+        <div class="container topbar-inner">
 
-<a href="#" aria-label="Facebook">Facebook</a>
+            <!-- Announcement text -->
+            <span class="topbar-text">Open daily • Free delivery in Nairobi</span>
 
-<a href="#" aria-label="Instagram">Instagram</a>
+            <!-- Social media icons -->
+            <div class="socials">
 
-<a href="https://wa.me/254799179777"
-target="_blank"
-class="whatsapp-btn"
-aria-label="Chat on WhatsApp">
-WhatsApp
-</a>
+                <!-- Facebook icon -->
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Instagram icon -->
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- WhatsApp link -->
+                <a href="https://wa.me/254799179777" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =====================================================
+    MAIN HEADER / NAVIGATION BAR
+    Contains the brand logo and navigation menu
+    ===================================================== -->
+
+    <header class="header">
+        <div class="container navbar">
+
+            <!-- Brand logo and pharmacy name -->
+            <a href="#home" class="brand">
+
+                <!-- Pharmacy logo -->
+                <img src="logo-transparent.png" alt="Elton's Pharmacy logo" class="brand-logo">
+
+                <!-- Brand text -->
+                <div>
+                    <span class="brand-name">Elton's Pharmacy</span>
+                    <span class="brand-tag">your family's health</span>
+                </div>
+
+            </a>
+
+            <!-- Mobile menu toggle button (hamburger menu) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+
+                <!-- Hamburger lines -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+            <!-- Navigation menu links -->
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+
+                    <!-- Navigation links scroll to sections -->
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#products">Products</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
 
 </div>
 
-</div>
-</div>
 
 
-<!-- HEADER -->
-
-<header class="header">
-
-<div class="container navbar">
-
-<a href="#home" class="brand">
-
-<img src="logo-transparent.png"
-alt="Elton's Pharmacy logo"
-class="brand-logo">
-
-<div>
-
-<span class="brand-name">Elton's Pharmacy</span>
-
-<span class="brand-tag">your family's health</span>
-
-</div>
-
-</a>
-
-<button
-class="menu-toggle"
-id="menuToggle"
-aria-label="Open menu"
-aria-expanded="false">
-
-<span></span>
-<span></span>
-<span></span>
-
-</button>
-
-<nav>
-
-<ul class="nav-menu" id="navMenu">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#products">Products</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</div>
-
-</header>
-
-
+<!-- =====================================================
+MAIN WEBSITE CONTENT
+===================================================== -->
 <main>
 
 
-<!-- HERO -->
+<!-- =====================================================
+HERO SECTION
+Main introduction section of the website
+===================================================== -->
 
 <section class="hero section" id="home">
 
-<div class="container hero-grid">
+    <div class="container hero-grid">
 
-<div class="hero-copy">
+        <!-- Hero text content -->
+        <div class="hero-copy">
 
-<span class="eyebrow">
-Community care you can trust
-</span>
+            <!-- Small introduction text -->
+            <span class="eyebrow">Community care you can trust</span>
 
-<h1>
-Your neighborhood pharmacy for everyday wellness.
-</h1>
+            <!-- Main heading -->
+            <h1>Your neighborhood pharmacy for everyday wellness.</h1>
 
-<p class="hero-text">
-We are your Community Pharmacy that deals with a wide range of medicines, supplements and toiletries. We accept both cash and insurance cards. Delivery is free within Nairobi.
-</p>
+            <!-- Description -->
+            <p class="hero-text">
+                We are your Community Pharmacy that deals with a wide range
+                of medicines, supplements and toiletries. We accept both cash and insurance cards.
+                <strong>Delivery is free within Nairobi.</strong>
+            </p>
 
-<div class="hero-actions">
+            <!-- Call-to-action buttons -->
+            <div class="hero-actions">
 
-<a href="#contact" class="btn btn-primary">
-Get in touch
-</a>
+                <a href="#contact" class="btn btn-primary">Get in touch</a>
 
-<a href="#products" class="btn btn-secondary">
-Explore products
-</a>
+                <a href="#products" class="btn btn-secondary">Explore products</a>
 
-</div>
-
-
-<div class="hero-points">
-
-<div class="point-card">
-
-<strong>Insurance Accepted</strong>
-
-<span>
-Convenient service for insured and cash clients.
-</span>
-
-</div>
-
-<div class="point-card">
-
-<strong>Fast Nairobi Delivery</strong>
-
-<span>
-Free delivery within Nairobi for added convenience.
-</span>
-
-</div>
-
-</div>
-
-</div>
+            </div>
+        </div>
 
 
-<div class="hero-panel">
 
-<div class="glass-card">
+        <!-- Hero information panel -->
+        <div class="hero-panel">
 
-<img
-src="logo-transparent.png"
-alt="Elton's Pharmacy logo"
-class="hero-logo"
-loading="lazy">
+            <div class="info-card hero-info">
 
-<h2>Healthy living starts here</h2>
+                <!-- Insurance feature -->
+                <div class="point">
 
-<p>
-From prescription support to personal care essentials, Elton's Pharmacy offers dependable service, professional guidance, and quality products for the whole family.
-</p>
+                    <i class="fas fa-id-card"></i>
 
-<div class="stats">
+                    <div>
+                        <strong>Insurance Accepted</strong>
+                        <p>Convenient service for insured and cash clients.</p>
+                    </div>
 
-<div>
-<strong>Medicines</strong>
-<span>Trusted pharmacy essentials</span>
-</div>
+                </div>
 
-<div>
-<strong>Supplements</strong>
-<span>Daily wellness support</span>
-</div>
 
-<div>
-<strong>Toiletries</strong>
-<span>Personal care for all ages</span>
-</div>
+                <!-- Delivery feature -->
+                <div class="point">
 
-</div>
+                    <i class="fas fa-truck"></i>
 
-</div>
+                    <div>
+                        <strong>Fast Nairobi Delivery</strong>
+                        <p>Free delivery within Nairobi for added convenience.</p>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
+        </div>
+    </div>
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- =====================================================
+ABOUT SECTION
+Describes the pharmacy services and benefits
+===================================================== -->
 
 <section class="section" id="about">
 
-<div class="container section-head">
+    <div class="container">
 
-<span class="eyebrow">About us</span>
+        <!-- Section heading -->
+        <div class="section-head">
 
-<h2>
-Focused on accessible, friendly pharmacy care.
-</h2>
+            <span class="eyebrow">About Us</span>
 
-<p>
-Elton's Pharmacy is built around convenience, trust, and everyday health support. We serve individuals, families, and working professionals looking for reliable access to quality medicines, supplements, toiletries, and responsive customer service.
-</p>
+            <h2>Focused on accessible, friendly pharmacy care.</h2>
 
-</div>
+            <p>
+                Elton's Pharmacy is built around convenience, trust, and everyday health support.
+                We serve families and professionals looking for reliable access to quality care.
+            </p>
 
-
-<div class="container cards-grid">
-
-<article class="info-card">
-
-<img src="images/pic15.jpg"
-alt="Pharmacist assisting a customer"
-class="info-image"
-loading="lazy">
-
-<h3>Professional Support</h3>
-
-<p>
-Friendly guidance to help you make informed choices about your health and wellness needs.
-</p>
-
-</article>
+        </div>
 
 
-<article class="info-card">
 
-<img src="images/pic4.jpg"
-alt="Insurance payment support at pharmacy"
-class="info-image"
-loading="lazy">
+        <!-- About service cards -->
+        <div class="cards-grid">
 
-<h3>Convenient Payments</h3>
+            <!-- Card 1 -->
+            <article class="info-card">
 
-<p>
-We accept both cash and insurance cards to make your experience smooth and flexible.
-</p>
+                <img src="images/pic15.jpg" alt="Pharmacist assistance" class="card-img">
 
-</article>
+                <h3>Professional Support</h3>
+
+                <p>Friendly guidance to help you make informed choices about your health.</p>
+
+            </article>
 
 
-<article class="info-card">
+            <!-- Card 2 -->
+            <article class="info-card">
 
-<img src="images/pic16.jpg"
-alt="Medicine delivery service"
-class="info-image"
-loading="lazy">
+                <img src="images/pic4.jpg" alt="Payment options" class="card-img">
 
-<h3>Reliable Delivery</h3>
+                <h3>Convenient Payments</h3>
 
-<p>
-Enjoy free delivery within Nairobi, helping you access essentials without delays.
-</p>
+                <p>We accept both cash and insurance cards to make your experience smooth.</p>
 
-</article>
+            </article>
 
-</div>
 
+            <!-- Card 3 -->
+            <article class="info-card">
+
+                <img src="images/pic16.jpg" alt="Delivery service" class="card-img">
+
+                <h3>Reliable Delivery</h3>
+
+                <p>Enjoy free delivery within Nairobi, helping you access essentials without delays.</p>
+
+            </article>
+
+        </div>
+    </div>
 </section>
 
 
-<!-- PRODUCTS -->
 
-<section class="section muted-section" id="products">
+<!-- =====================================================
+PRODUCTS SECTION
+Displays the pharmacy product categories
+===================================================== -->
 
-<div class="container section-head">
+<section class="section muted-bg" id="products">
 
-<span class="eyebrow">What we offer</span>
+    <div class="container">
 
-<h2>
-Products and services tailored to daily health needs.
-</h2>
+        <div class="section-head">
 
-</div>
+            <span class="eyebrow">What We Offer</span>
 
+            <h2>Products tailored to your needs.</h2>
 
-<div class="container product-grid">
-
-<article class="product-card">
-
-<img src="images/pic11.jpg"
-alt="Prescription medicines"
-class="product-image"
-loading="lazy">
-
-<h3>Medicines</h3>
-
-<p>
-Prescription and over-the-counter medications sourced for quality and safety.
-</p>
-
-</article>
+        </div>
 
 
-<article class="product-card">
 
-<img src="images/pic12.jpg"
-alt="Health supplements"
-class="product-image"
-loading="lazy">
+        <!-- Product category cards -->
+        <div class="product-grid">
 
-<h3>Supplements</h3>
+            <article class="product-card">
+                <img src="images/pic11.jpg" alt="Medicines">
+                <h3>Medicines</h3>
+                <p>Quality prescription and over-the-counter medications.</p>
+            </article>
 
-<p>
-Wellness products supporting immunity, nutrition and energy.
-</p>
+            <article class="product-card">
+                <img src="images/pic12.jpg" alt="Supplements">
+                <h3>Supplements</h3>
+                <p>Wellness products supporting immunity and energy.</p>
+            </article>
 
-</article>
+            <article class="product-card">
+                <img src="images/pic13.jpg" alt="Toiletries">
+                <h3>Toiletries</h3>
+                <p>Personal care essentials including baby and skincare.</p>
+            </article>
 
-
-<article class="product-card">
-
-<img src="images/pic13.jpg"
-alt="Personal care toiletries"
-class="product-image"
-loading="lazy">
-
-<h3>Toiletries</h3>
-
-<p>
-Personal care essentials including hygiene, baby care and skincare.
-</p>
-
-</article>
-
-
-<article class="product-card">
-
-<img src="images/pic3.jpg"
-alt="Insurance card support"
-class="product-image"
-loading="lazy">
-
-<h3>Insurance Support</h3>
-
-<p>
-Easy processing for customers using insurance cards.
-</p>
-
-</article>
-
-</div>
-
+        </div>
+    </div>
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- =====================================================
+CONTACT SECTION
+Includes contact details, form, and Google map
+===================================================== -->
 
 <section class="section" id="contact">
 
-<div class="container contact-grid">
+    <div class="container contact-grid">
+
+        <!-- Contact information area -->
+        <div class="contact-info">
+
+            <span class="eyebrow">Contact Us</span>
+
+            <h2>Speak to our team today.</h2>
+
+            <p class="contact-copy">
+                Have a question? Reach out to us via any of these channels.
+            </p>
 
 
-<div>
 
-<span class="eyebrow">Contact us</span>
+            <!-- Contact cards -->
+            <div class="contact-cards">
 
-<h2>Speak to our team today.</h2>
-
-<p class="contact-copy">
-Have a question about our products, delivery, or payment options? Reach out using the form.
-</p>
-
-
-<div class="contact-cards">
-
-<div class="contact-card">
-<strong>Phone</strong>
-<a href="tel:+254799179777">
-+254 799 179 777
-</a>
-</div>
+                <!-- Phone -->
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>Phone</strong>
+                        <a href="tel:+254799179777">+254 799 179 777</a>
+                    </div>
+                </div>
 
 
-<div class="contact-card">
-<strong>Email</strong>
-<a href="mailto:info@eltonspharmacy.co.ke">
-info@eltonspharmacy.co.ke
-</a>
-</div>
+                <!-- Email -->
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:info@eltonspharmacy.co.ke">
+                            info@eltonspharmacy.co.ke
+                        </a>
+                    </div>
+                </div>
 
 
-<div class="contact-card">
-<strong>Location</strong>
-<span>Nairobi, Kenya</span>
-</div>
+                <!-- Location -->
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Location</strong>
+                        <span>Kipro Centre, Westlands, Nairobi</span>
+                    </div>
+                </div>
 
-</div>
-
-</div>
-
-
-<form class="contact-form" id="contactForm">
-
-<div class="form-group">
-<label for="name">Full Name</label>
-<input type="text" id="name" name="name" required>
-</div>
-
-<div class="form-group">
-<label for="email">Email Address</label>
-<input type="email" id="email" name="email" required>
-</div>
-
-<div class="form-group">
-<label for="phone">Phone Number</label>
-<input type="tel" id="phone" name="phone">
-</div>
-
-<div class="form-group">
-<label for="message">Message</label>
-<textarea id="message" name="message" rows="5" required></textarea>
-</div>
-
-<button type="submit" class="btn btn-primary btn-full">
-Send message
-</button>
-
-<p class="form-status" id="formStatus"></p>
-
-</form>
-
-</div>
+            </div>
+        </div>
 
 
-<!-- MAP -->
 
-<div class="map-container">
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
 
-<iframe
-src="https://www.google.com/maps?q=Kipro+Centre+Westlands+Nairobi&output=embed"
-width="100%"
-height="350"
-style="border:0;"
-loading="lazy">
-</iframe>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-</div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+            </button>
+
+        </form>
+    </div>
+
+
+
+    <!-- Google Maps location embed -->
+    <div class="container map-container">
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18..."
+            width="100%" height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </div>
 
 </section>
 
 </main>
 
 
-<!-- FOOTER -->
+
+<!-- =====================================================
+FOOTER SECTION
+Contains extra navigation and contact info
+===================================================== -->
 
 <footer class="footer">
 
 <div class="container footer-grid">
 
-<div>
-
-<a href="#home" class="brand footer-brand">
-
-<img src="logo-transparent.png"
-alt="Elton's Pharmacy logo"
-class="brand-logo footer-logo">
-
-<div>
+<!-- Footer brand -->
+<div class="footer-brand-area">
 
 <span class="brand-name">Elton's Pharmacy</span>
 
-<span class="brand-tag">your family's health</span>
-
-</div>
-
-</a>
-
-<p class="footer-copy">
-Your trusted community pharmacy for medicines, supplements, toiletries and free delivery within Nairobi.
+<p>
+Your trusted community pharmacy for medicines,
+supplements, toiletries and free delivery within Nairobi.
 </p>
 
 </div>
 
 
+
+<!-- Quick navigation links -->
 <div>
 
 <h4>Quick Links</h4>
@@ -519,11 +479,8 @@ Your trusted community pharmacy for medicines, supplements, toiletries and free 
 <ul class="footer-links">
 
 <li><a href="#home">Home</a></li>
-
 <li><a href="#about">About</a></li>
-
 <li><a href="#products">Products</a></li>
-
 <li><a href="#contact">Contact</a></li>
 
 </ul>
@@ -531,20 +488,20 @@ Your trusted community pharmacy for medicines, supplements, toiletries and free 
 </div>
 
 
+
+<!-- Contact details -->
 <div>
 
 <h4>Contact Info</h4>
 
 <ul class="footer-contact">
 
-<li>Kipro Centre</li>
-
-<li>Prof Saitoti Road, Off Ring Rd, Westlands</li>
-
-<li>Nairobi, Kenya</li>
+<li>Kipro Centre, Westlands</li>
 
 <li>
-<a href="tel:+254799179777">+254 799 179 777</a>
+<a href="tel:+254799179777">
++254 799 179 777
+</a>
 </li>
 
 <li>
@@ -560,26 +517,64 @@ info@eltonspharmacy.co.ke
 </div>
 
 
+
+<!-- Copyright area -->
 <div class="container footer-bottom">
 
-<p>
-© <span id="year"></span> Elton's Pharmacy. All rights reserved.
-</p>
+<p>© <span id="year"></span> Elton's Pharmacy. All rights reserved.</p>
 
 </div>
 
 </footer>
 
 
+
+<!-- Floating WhatsApp contact button -->
 <a href="https://wa.me/254799179777"
 class="floating-whatsapp"
 target="_blank"
 aria-label="Chat on WhatsApp">
-WhatsApp
+
+<i class="fab fa-whatsapp"></i> WhatsApp
+
 </a>
 
 
-<script src="script.js"></script>
+
+<!-- =====================================================
+JAVASCRIPT FUNCTIONALITY
+===================================================== -->
+
+<script>
+
+    /* Automatically updates the copyright year */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+    /* Mobile menu toggle functionality */
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+
+        navMenu.classList.toggle('open');
+        menuToggle.classList.toggle('active');
+
+    });
+
+
+    /* Close mobile menu when navigation link is clicked */
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+
+        link.addEventListener('click', () => {
+
+            navMenu.classList.remove('open');
+
+        });
+
+    });
+
+</script>
 
 </body>
 </html>
