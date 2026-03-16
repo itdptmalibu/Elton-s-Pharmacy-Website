@@ -9,7 +9,7 @@ Features:
 - Products section
 - Contact form
 - Embedded Google map
-- Social media icons
+- Social media icons inline next to topbar text
 - WhatsApp floating button
 ========================================================
 -->
@@ -40,8 +40,8 @@ Features:
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Import Inter font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Import Poppins font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
@@ -58,32 +58,31 @@ Contains the announcement bar and the main navigation
 
 <div class="fixed-top-wrapper">
 
-    <!-- Topbar displaying announcement and social media icons -->
+    <!-- Topbar displaying announcement and inline social media icons -->
     <div class="topbar">
         <div class="container topbar-inner">
 
             <!-- Announcement text -->
             <span class="topbar-text">Open daily • Free delivery in Nairobi</span>
 
-            <!-- Social media icons -->
-            <div class="socials">
-
-                <!-- Facebook icon -->
-                <a href="#" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <!-- Instagram icon -->
-                <a href="#" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <!-- WhatsApp link -->
+            <!-- Inline social media icons next to text -->
+            <div class="inline-socials">
+                <!-- WhatsApp -->
                 <a href="https://wa.me/254799179777" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-
+                <!-- Facebook -->
+                <a href="#" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Twitter -->
+                
             </div>
+
         </div>
     </div>
 
@@ -224,11 +223,8 @@ Main introduction section of the website
     </div>
 </section>
 
-
-
 <!-- =====================================================
 ABOUT SECTION
-Describes the pharmacy services and benefits
 ===================================================== -->
 
 <section class="section" id="about">
@@ -293,11 +289,8 @@ Describes the pharmacy services and benefits
     </div>
 </section>
 
-
-
 <!-- =====================================================
 PRODUCTS SECTION
-Displays the pharmacy product categories
 ===================================================== -->
 
 <section class="section muted-bg" id="products">
@@ -339,11 +332,8 @@ Displays the pharmacy product categories
     </div>
 </section>
 
-
-
 <!-- =====================================================
 CONTACT SECTION
-Includes contact details, form, and Google map
 ===================================================== -->
 
 <section class="section" id="contact">
@@ -448,11 +438,8 @@ Includes contact details, form, and Google map
 
 </main>
 
-
-
 <!-- =====================================================
 FOOTER SECTION
-Contains extra navigation and contact info
 ===================================================== -->
 
 <footer class="footer">
@@ -518,8 +505,6 @@ info@eltonspharmacy.co.ke
 
 </div>
 
-
-
 <!-- Copyright area -->
 <div class="container footer-bottom">
 
@@ -528,8 +513,6 @@ info@eltonspharmacy.co.ke
 </div>
 
 </footer>
-
-
 
 <!-- Floating WhatsApp contact button -->
 <a href="https://wa.me/254799179777"
@@ -540,8 +523,6 @@ aria-label="Chat on WhatsApp">
 <i class="fab fa-whatsapp"></i> WhatsApp
 
 </a>
-
-
 
 <!-- =====================================================
 JAVASCRIPT FUNCTIONALITY
