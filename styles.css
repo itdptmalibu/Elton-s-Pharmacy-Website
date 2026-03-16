@@ -345,32 +345,53 @@ textarea:focus {
   justify-content: space-between;
   gap: 10px;
 }
+/* NAVIGATION MOVED TO TOPBAR */
+
+.topbar .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.topbar .nav-menu a {
+  color: white;
+  font-weight: 600;
+  font-size: .85rem;
+  transition: color .3s ease;
+}
+
+.topbar .nav-menu a:hover {
+  color: var(--accent);
+}
 
 .topbar-text {
   color: white; /* ensures Open daily / Free delivery text is fully visible */
   font-weight: 500;
 }
 
-.inline-socials {
+/* SOCIALS NOW IN HEADER */
+
+.header .inline-socials {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.inline-socials a {
+.header .inline-socials a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 28px;
   height: 28px;
-  color: white; /* icon color visible */
+  color: white;
   font-size: 1rem;
   background: var(--primary);
   border-radius: 50%;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.inline-socials a:hover {
+.header .inline-socials a:hover {
   transform: scale(1.2);
   background: var(--accent);
 }
