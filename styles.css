@@ -345,56 +345,13 @@ textarea:focus {
   justify-content: space-between;
   gap: 10px;
 }
-/* NAVIGATION MOVED TO TOPBAR */
-
-.topbar .nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  list-style: none;
-}
-
-.topbar .nav-menu a {
-  color: white;
-  font-weight: 600;
-  font-size: .85rem;
-  transition: color .3s ease;
-}
-
-.topbar .nav-menu a:hover {
-  color: var(--accent);
-}
 
 .topbar-text {
   color: white; /* ensures Open daily / Free delivery text is fully visible */
   font-weight: 500;
 }
 
-/* SOCIALS NOW IN HEADER */
 
-.header .inline-socials {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.header .inline-socials a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  color: white;
-  font-size: 1rem;
-  background: var(--primary);
-  border-radius: 50%;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.header .inline-socials a:hover {
-  transform: scale(1.2);
-  background: var(--accent);
-}
 
 /* RESPONSIVE */
 @media(max-width:900px) {
@@ -507,4 +464,218 @@ Slack text for About menu link */
 .hero-actions .btn-secondary:hover {
     color: #fff !important; /* if you want white text on hover for contrast */
     background: var(--primary) !important; /* or keep existing hover style */
+}
+/* ===============================
+SOCIAL MEDIA ICON BRAND COLORS
+================================ */
+
+/* WhatsApp brand green */
+.inline-socials a .fa-whatsapp{
+    color:#25D366;
+}
+
+/* Facebook brand blue */
+.inline-socials a .fa-facebook-f{
+    color:#1877F2;
+}
+
+/* Instagram gradient style */
+.inline-socials a .fa-instagram{
+    background: linear-gradient(
+        45deg,
+        #f58529,
+        #feda77,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Optional hover glow effect */
+.inline-socials a:hover i{
+    transform:scale(1.2);
+    transition:0.3s ease;
+}
+/* ===============================
+SOCIAL ICONS WITH ROUND BORDER
+================================ */
+
+.inline-socials a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:34px;
+    height:34px;
+
+    border:2px solid #1877F2; /* blue border */
+    border-radius:50%; /* makes it round */
+
+    margin-left:10px;
+    text-decoration:none;
+
+    transition:all 0.3s ease;
+}
+
+/* Icon size */
+.inline-socials a i{
+    font-size:16px;
+}
+
+
+/* Brand colors */
+
+/* WhatsApp */
+.inline-socials a .fa-whatsapp{
+    color:#25D366;
+}
+
+/* Facebook */
+.inline-socials a .fa-facebook-f{
+    color:#1877F2;
+}
+
+/* Instagram */
+.inline-socials a .fa-instagram{
+    background:linear-gradient(
+        45deg,
+        #f58529,
+        #feda77,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+/* Hover effect */
+.inline-socials a:hover{
+    background:#1877F2;
+    transform:scale(1.1);
+}
+
+.inline-socials a:hover i{
+    color:white;
+    -webkit-text-fill-color:white;
+}
+/* ===============================
+SOCIAL ICONS WITH ROUND BORDER
+================================ */
+
+.inline-socials a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:34px;
+    height:34px;
+
+    border:2px solid #1877F2; /* blue border */
+    border-radius:50%; /* makes it round */
+
+    margin-left:10px;
+    text-decoration:none;
+
+    transition:all 0.3s ease;
+}
+
+/* Icon size */
+.inline-socials a i{
+    font-size:16px;
+}
+
+
+/* Brand colors */
+
+/* WhatsApp */
+.inline-socials a .fa-whatsapp{
+    color:#25D366;
+}
+
+/* Facebook */
+.inline-socials a .fa-facebook-f{
+    color:#1877F2;
+}
+
+/* Instagram */
+.inline-socials a .fa-instagram{
+    background:linear-gradient(
+        45deg,
+        #f58529,
+        #feda77,
+        #dd2a7b,
+        #8134af,
+        #515bd4
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+/* Hover effect */
+.inline-socials a:hover{
+    background:#1877F2;
+    transform:scale(1.1);
+}
+
+.inline-socials a:hover i{
+    color:white;
+    -webkit-text-fill-color:white;
+}
+/* ===============================
+TOPBAR SOCIAL ICONS DEFAULT
+================================ */
+
+.inline-socials{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.inline-socials a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:32px;
+    height:32px;
+    border:2px solid #1877F2;
+    border-radius:50%;
+    text-decoration:none;
+}
+
+/* Icon size */
+.inline-socials a i{
+    font-size:15px;
+}
+
+
+/* ===============================
+MOBILE FIX
+================================ */
+
+@media (max-width:768px){
+
+    .topbar-inner{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .inline-socials{
+        gap:6px;
+    }
+
+    .inline-socials a{
+        width:28px;
+        height:28px;
+    }
+
+    .inline-socials a i{
+        font-size:13px;
+    }
+
 }
