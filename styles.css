@@ -298,7 +298,7 @@ textarea:focus {
 
 /* FOOTER */
 .footer {
-  background: #12162a;
+  background: #3d3b98;
   color: rgba(255,255,255,.7);
   padding: 2rem 0 1rem;
 }
@@ -510,7 +510,7 @@ SOCIAL ICONS WITH ROUND BORDER
     width:34px;
     height:34px;
 
-    border:2px solid #1877F2; /* blue border */
+    border:2px solid #3d3b98; /* blue border */
     border-radius:50%; /* makes it round */
 
     margin-left:10px;
@@ -554,7 +554,7 @@ SOCIAL ICONS WITH ROUND BORDER
 
 /* Hover effect */
 .inline-socials a:hover{
-    background:#1877F2;
+    background:#3d3b98;
     transform:scale(1.1);
 }
 
@@ -574,7 +574,7 @@ SOCIAL ICONS WITH ROUND BORDER
     width:34px;
     height:34px;
 
-    border:2px solid #1877F2; /* blue border */
+    border:2px solid#3d3b98; /* blue border */
     border-radius:50%; /* makes it round */
 
     margin-left:10px;
@@ -618,7 +618,7 @@ SOCIAL ICONS WITH ROUND BORDER
 
 /* Hover effect */
 .inline-socials a:hover{
-    background:#1877F2;
+    background:#3d3b98;
     transform:scale(1.1);
 }
 
@@ -642,7 +642,7 @@ TOPBAR SOCIAL ICONS DEFAULT
     justify-content:center;
     width:32px;
     height:32px;
-    border:2px solid #1877F2;
+    border:2px solid #3d3b98;
     border-radius:50%;
     text-decoration:none;
 }
