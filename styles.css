@@ -366,19 +366,23 @@ textarea:focus {
   .menu-toggle {
     display: flex;
   }
+@media(max-width:900px) {
 
   .nav-menu {
     position: absolute;
     top: 100%;
-    left: 1rem;
-    right: 1rem;
+    left: 0;          /* FIX */
+    right: 0;         /* FIX */
+    width: 100%;      /* ensures full stretch */
     flex-direction: column;
     background: var(--primary);
-    padding: 14px;
-    border-radius: var(--radius);
+    padding: 14px 10px; /* keep inner spacing */
+    border-radius: 0;   /* remove rounded edges touching sides */
     box-shadow: var(--shadow);
     display: none;
   }
+
+}
 
   .nav-menu a {
     color: white;
@@ -678,4 +682,17 @@ MOBILE FIX
         font-size:13px;
     }
 
+}
+@media (max-width:768px){
+
+  .container{
+    width: 100%;        /* remove side gap */
+    padding-left: 10px; /* keep small spacing inside */
+    padding-right: 10px;
+  }
+
+}
+.header {
+  width: 100vw;   /* force full screen width */
+  left: 0;
 }
