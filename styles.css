@@ -365,24 +365,21 @@ textarea:focus {
 
   .menu-toggle {
     display: flex;
+    padding-left: 10rem;
   }
-@media(max-width:900px) {
 
   .nav-menu {
     position: absolute;
     top: 100%;
-    left: 0;          /* FIX */
-    right: 0;         /* FIX */
-    width: 100%;      /* ensures full stretch */
+    left: 1rem;
+    right: 1rem;
     flex-direction: column;
     background: var(--primary);
-    padding: 14px 10px; /* keep inner spacing */
-    border-radius: 0;   /* remove rounded edges touching sides */
+    padding: 14px;
+    border-radius: var(--radius);
     box-shadow: var(--shadow);
     display: none;
   }
-
-}
 
   .nav-menu a {
     color: white;
@@ -691,8 +688,4 @@ MOBILE FIX
     padding-right: 10px;
   }
 
-}
-.header {
-  width: 100vw;   /* force full screen width */
-  left: 0;
 }
