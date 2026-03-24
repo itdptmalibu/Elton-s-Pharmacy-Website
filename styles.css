@@ -373,14 +373,15 @@ textarea:focus {
 .inline-socials a i{
   font-size:15px;
 }
+.inline-socials a .fa-facebook-f{
+  color:#1877F2;
+}
 
 .inline-socials a .fa-whatsapp{
   color:#25D366;
 }
 
-.inline-socials a .fa-facebook-f{
-  color:#1877F2;
-}
+
 
 .inline-socials a .fa-instagram{
   background: linear-gradient(
