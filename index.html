@@ -205,7 +205,7 @@ Main introduction section of the website
             <div class="hero-actions">
 
                
-                <button id="get-in-touch" class="btn btn-primary">Get in Touch</button>
+                 <a href="#contact" class="btn btn-primary" id="get-in-touch">Get in Touch</a>
 
               <a href="#products" class="btn btn-secondary" id="explore-products">Explore products</a>
 
@@ -237,7 +237,7 @@ Main introduction section of the website
                 <div class="point">
                      <i class="fas fa-truck"></i>
                      <div> <strong>Fast Nairobi Delivery</strong>
-                         <p>Free delivery within Nairobi for added convenience.</p> 
+                         <p>Free delivery for orders above KSh.2500.</p> 
                         </div>
 
                     
@@ -351,6 +351,7 @@ PRODUCTS SECTION
                 <h3>Supplements</h3>
                 <p>Wellness products supporting immunity and energy.</p>
             </article>
+            
 
             <article class="product-card">
                 <img src="images/pic13.jpg" loading="lazy" alt="Toiletries">
@@ -375,7 +376,11 @@ CONTACT SECTION
 
             <span class="eyebrow">Contact Us</span>
 
-            <h2>Speak to our team today.</h2>
+            <!-- <h2>Speak to our team today.</h2> -->
+            
+             <!-- <h2 style="color:  #3d3b98;">Speak to Our Team Today</h2> -->
+             <h2 id="purple-header">Speak to our team today.</h2>
+
 
             <p class="contact-copy">
                 Have a question? Reach out to us via any of these channels.
@@ -468,7 +473,9 @@ CONTACT SECTION
 
 </main>
 
-<!-- =====================================================
+
+
+<!-- ====================================================
 FOOTER SECTION
 ===================================================== -->
 
@@ -557,11 +564,20 @@ aria-label="Chat on WhatsApp">
 <!-- =====================================================
 JAVASCRIPT FUNCTIONALITY
 ===================================================== -->
-
+<!-- 
 <script>
 
     /* Automatically updates the copyright year */
-    document.getElementById('year').textContent = new Date().getFullYear();
+   /* Automatically updates the copyright year */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// const contactForm = document.getElementById('contactForm');
+
+// contactForm.addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     alert('✅ Message sent! We will get back to you shortly.');
+//     contactForm.reset();
+// });
 
 
     /* Mobile menu toggle functionality */
@@ -587,7 +603,8 @@ JAVASCRIPT FUNCTIONALITY
 
     });
 
-</script>
+</script> -->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -601,6 +618,27 @@ JAVASCRIPT FUNCTIONALITY
   "telephone": " +254 799 179 777"
 }
 </script>
+
+<!-- Start of Tawk.to Script
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69ccb1677155761c37788ebb/1jl3p9vrm';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script> -->
+
+<!--End of Tawk.to Script-->
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+
 
 </body>
 </html>
