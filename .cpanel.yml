@@ -1,0 +1,13 @@
+
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/eltonsp/public_html
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp styles.css $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp favicon.png $DEPLOYPATH
+    - /bin/cp logo-transparent.png $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+
+
